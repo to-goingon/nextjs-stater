@@ -122,4 +122,8 @@
   body {
     @apply bg-background text-foreground;
   }
+  /* Auto-center container elements for Tailwind v4 */
+  .container {
+    @apply mx-auto;
+  }
 }
