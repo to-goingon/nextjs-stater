@@ -1,6 +1,22 @@
-Please write your commit message according to the following rules.
+# Commit according to the following guidelines
 
-Commit Message Rules (Enforced in this repo)
+## Process
+
+- Check for staged files; if there are staged files, only commit those files
+- Analyze the diff for multiple logical changes
+- Suggest splitting if necessary
+
+## Criteria for Splitting
+
+- Different concerns | Mixed types | File patterns | Large changes | Separation by functional area
+
+## Reference
+
+- Staged files: if there are staged files, only commit those files
+- Diff analysis: analyze the diff for multiple logical changes
+- Do not add Claude's signature to the commit
+
+## Commit Message Rules (Enforced in this repo)
 
 - Format: `type(scope): subject` on the first line only.
   - `type`: one of `feat`, `fix`, `chore`, `docs`, `refactor`, `test`, `perf`, `build`, `ci`, `revert`.
