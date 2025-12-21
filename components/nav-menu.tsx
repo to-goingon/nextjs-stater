@@ -6,22 +6,22 @@ import { cn } from "@/lib/utils";
 
 const routes = [
   {
-    href: "/",
+    href: "/" as const,
     label: "Home",
   },
   {
-    href: "/about",
+    href: "/about" as const,
     label: "About",
   },
   {
-    href: "/dashboard",
+    href: "/dashboard" as const,
     label: "Dashboard",
   },
   {
-    href: "/contact",
+    href: "/contact" as const,
     label: "Contact",
   },
-];
+] as const;
 
 export function NavMenu() {
   const pathname = usePathname();
